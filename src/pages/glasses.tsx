@@ -25,7 +25,7 @@ export default function Glasses() {
             <img  style={{ marginTop: 90 }} src="/img/bannerCopo.png" alt="" />
             <div className="relative  flex flex-col items-center justify-center  gap-12">
                 <h1 style={{ fontSize: 30, fontWeight: 500, marginTop: 30, textAlign: "center" }}>Veja qual modelo combina com você</h1>
-                <div className="flex gap-3 flex-wrap justify-center max-w-[1500px]" style={{ padding: 8 }}>
+                <div className="flex gap-3 flex-wrap justify-center max-w-[1500px]" style={{ padding: '1px' }}>
 
                     {produtos.map((produto, index) => (
                         <Card.Root
