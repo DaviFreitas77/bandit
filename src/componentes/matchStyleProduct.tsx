@@ -19,13 +19,13 @@ export default function MatchStyle() {
         <div>
             <div className="relative top-96 flex flex-col items-center justify-center  gap-12">
                 <h1 style={{ fontSize: 30,fontWeight:500 }}>Promoções</h1>
-                <div className="flex gap-3 flex-wrap justify-center max-w-[1500px]" style={{ padding: 8 }}>
+                <div className="flex gap-3 flex-wrap justify-center max-w-[1500px]" style={{ padding: '1px' }}>
 
                 {produtos.map((produto, index) => (
                     <Card.Root
                         key={index}
                         width="100%"
-                        maxW={{ base: "165px", sm: "250px", md: "320px" }}
+                        maxW={{ base: "200px", sm: "250px", md: "320px" }}
                         mx="auto"
                         className="cursor-pointer hover:opacity-85"
                     >
