@@ -29,16 +29,16 @@ export default function Promotion() {
 
             >
                 <SwiperSlide>
-                    <img className="w-100" src="../public/img/promo.jpg" alt="Banner 1" />
+                    <img className="w-100" src="../public/promo.jpg" alt="Banner 1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className="w-100" src="../public/img/promo.jpg" alt="Banner 2" />
+                    <img className="w-100" src="../public/promo.jpg" alt="Banner 2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className="w-100" src="../public/img/promo.jpg" alt="Banner 3" />
+                    <img className="w-100" src="../public/promo.jpg" alt="Banner 3" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className="w-100" src="../public/img/promo.jpg" alt="Banner 3" />
+                    <img className="w-100" src="../public/promo.jpg" alt="Banner 3" />
                 </SwiperSlide>
             </Swiper>
 

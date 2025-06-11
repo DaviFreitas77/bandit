@@ -8,29 +8,29 @@ export default function Category() {
             </h2>
             <div className="flex  items-center justify-center gap-16 flex-wrap">
                 <button className="flex flex-col items-center justify-center gap-2">
-                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/img/draken.jpeg" alt="" />
+                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/draken.jpeg" alt="" />
                     <p className="text-2xl ">Tokyo Revenger</p>
                 </button>
                 <button className="flex flex-col items-center justify-center gap-2">
-                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/img/draken.jpeg" alt="" />
+                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/draken.jpeg" alt="" />
                     <p >Moletom</p>
                 </button>
                 <Link
                     to={'/glasses'}
                     className="flex flex-col items-center justify-center gap-2">
-                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/img/draken.jpeg" alt="" />
+                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/draken.jpeg" alt="" />
                     <p>Copos</p>
                 </Link>
                 <button className="flex flex-col items-center justify-center gap-2">
-                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/img/draken.jpeg" alt="" />
+                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/draken.jpeg" alt="" />
                     <p >Tokyo revenger</p>
                 </button>
                 <button className="flex flex-col items-center justify-center gap-2">
-                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/img/draken.jpeg" alt="" />
+                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/draken.jpeg" alt="" />
                     <p >Tokyo revenger</p>
                 </button>
                 <button className="flex flex-col items-center justify-center gap-2">
-                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/img/draken.jpeg" alt="" />
+                    <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src="../public/draken.jpeg" alt="" />
                     <p >Tokyo revenger</p>
                 </button>
 

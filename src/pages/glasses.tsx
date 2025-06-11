@@ -8,21 +8,21 @@ export default function Glasses() {
         window.scrollTo(0, 0);
     }, []);
     const produtos = [
-        { id: 1, tittle: "Nue Camp", price: "R$ 2999,99", image: "../public/img/copo.png" },
-        { id: 2, tittle: "Real Jersey", price: "R$ 1999,99", image: "../public/img/copo.png" },
-        { id: 3, tittle: "PSG Home", price: "R$ 2499,99", image: "../public/img/copo.png" },
-        { id: 4, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/copo.png" },
-        { id: 5, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/copo.png" },
-        { id: 6, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/copo.png" },
-        { id: 7, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/copo.png" },
-        { id: 8, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/copo.png" },
+        { id: 1, tittle: "Nue Camp", price: "R$ 2999,99", image: "../public/copo.png" },
+        { id: 2, tittle: "Real Jersey", price: "R$ 1999,99", image: "../public/copo.png" },
+        { id: 3, tittle: "PSG Home", price: "R$ 2499,99", image: "../public/copo.png" },
+        { id: 4, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/copo.png" },
+        { id: 5, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/copo.png" },
+        { id: 6, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/copo.png" },
+        { id: 7, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/copo.png" },
+        { id: 8, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/copo.png" },
 
     ];
 
     return (
         <div>
             <Header />
-            <img  style={{ marginTop: 90 }} src="../public/img/bannerCopo.png" alt="" />
+            <img  style={{ marginTop: 90 }} src="../public/bannerCopo.png" alt="" />
             <div className="relative  flex flex-col items-center justify-center  gap-12">
                 <h1 style={{ fontSize: 30, fontWeight: 500, marginTop: 30, textAlign: "center" }}>Veja qual modelo combina com você</h1>
                 <div className="flex gap-3 flex-wrap justify-center max-w-[1500px]" style={{ padding: 8 }}>
