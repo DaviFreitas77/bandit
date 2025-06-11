@@ -1,6 +1,6 @@
-import { Button, Card, HStack } from "@chakra-ui/react"
+import { Button, Card } from "@chakra-ui/react"
 import { useEffect } from "react";
-import { Toaster, toaster } from "../../src/components/ui/toaster"
+import { toaster } from "../../src/components/ui/toaster"
 import { Link } from "react-router-dom";
 import { Header } from "../componentes/header";
 export default function Glasses() {
