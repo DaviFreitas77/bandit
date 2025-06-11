@@ -1,0 +1,113 @@
+import { useParams } from 'react-router-dom';
+import { Portal, Select, createListCollection, HStack, IconButton, NumberInput, Button, Group, Input } from "@chakra-ui/react"
+import { LuMinus, LuPlus } from "react-icons/lu"
+import { CiDeliveryTruck } from "react-icons/ci";
+import { useState } from "react"
+import { Header } from '../componentes/header';
+import { useLocation } from "react-router-dom";
+import Recommendation from '../componentes/recommendation';
+import { useEffect } from "react";
+
+export default function InfoProduct() {
+       useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
+  const location = useLocation();
+  const { produto } = location.state || {}
+  const [value, setValue] = useState<string[]>([])
+  const { id } = useParams();
+  const sizes = createListCollection({
+    items: [
+      { label: "p", value: "1" },
+      { label: "m", value: "2" },
+      { label: "g", value: "3" },
+      { label: "gg", value: "4" },
+    ],
+  })
+  return (
+
+    <div>
+      <Header />
+      <div className="flex justify-center w-full flex-col lg:flex-row flex-wrap" style={{ marginTop: 60 }}>
+        <div className='lg:w-[50%] flex justify-center'>
+          <img className='lg:w-[70%]' src={produto.image} alt="" />
+        </div>
+        <div
+          className="w-full lg:w-[50%] flex  items-start lg:items-center"
+          style={{ marginTop: 20, paddingLeft: 16, paddingRight: 16 }}
+        >
+          <div className='w-full lg:w-[50%]' >
+            <h1 style={{ fontWeight: '600', fontSize: 28 }}>{produto.tittle}</h1>
+            <p style={{ fontWeight: 'bold', fontSize: 28, marginTop: 15 }}>{produto.price}</p>
+            <p style={{ fontSize: 14, color: '#579295', fontWeight: "bold" }}>2 x de R$24,95 sem juros</p>
+            <Select.Root
+              collection={sizes
+              }
+
+              pt="8"
+              value={value}
+              onValueChange={(e) => setValue(e.value)}
+            >
+              <Select.HiddenSelect />
+              <Select.Label>Tamanho</Select.Label>
+              <Select.Control>
+                <Select.Trigger>
+                  <Select.ValueText placeholder="selecione o tamanho" />
+                </Select.Trigger>
+                <Select.IndicatorGroup>
+                  <Select.Indicator />
+                </Select.IndicatorGroup>
+              </Select.Control>
+              <Portal>
+                <Select.Positioner>
+                  <Select.Content>
+                    {sizes
+                      .items.map((size) => (
+                        <Select.Item item={size} key={size.value}>
+                          {size.label}
+                          <Select.ItemIndicator />
+                        </Select.Item>
+                      ))}
+                  </Select.Content>
+                </Select.Positioner>
+              </Portal>
+            </Select.Root>
+            <div className='flex items-center gap-4 w-full' style={{ marginTop: 40, paddingRight: 16 }}>
+              <NumberInput.Root defaultValue="1" min={1} unstyled spinOnPress={false}>
+                <HStack gap="2">
+                  <NumberInput.DecrementTrigger asChild>
+                    <IconButton variant="outline" size="sm">
+                      <LuMinus />
+                    </IconButton>
+                  </NumberInput.DecrementTrigger>
+                  <NumberInput.ValueText textAlign="center" fontSize="lg" minW="3ch" />
+                  <NumberInput.IncrementTrigger asChild>
+                    <IconButton variant="outline" size="sm">
+                      <LuPlus />
+                    </IconButton>
+                  </NumberInput.IncrementTrigger>
+                </HStack>
+              </NumberInput.Root>
+              <Button w={{ base: "65%", lg: "100%" }} height="50px">
+                Comprar
+              </Button>
+            </div>
+            <div className='flex flex-col gap-2' style={{ marginTop: 20 }}>
+              <div className='flex items-center gap-2'>
+                <CiDeliveryTruck size={25} />
+                <span>meios de envio</span>
+              </div>
+              <Group attached w="full" maxW="sm">
+                <Input flex="1" placeholder="cep" />
+                <Button bg="bg.subtle" variant="outline">
+                  Calcular
+                </Button>
+              </Group>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Recommendation />
+    </div>
+  );
+}
