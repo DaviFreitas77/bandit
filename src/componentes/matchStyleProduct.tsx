@@ -4,14 +4,14 @@ import {  toaster } from "../../src/components/ui/toaster"
 import { Link } from "react-router-dom";
 export default function MatchStyle() {
       const produtos = [
-        { id: 1, tittle: "Nue Camp", price: "R$ 2999,99", image: "../src/img/camiseta.png" },
-        { id: 2, tittle: "Real Jersey", price: "R$ 1999,99", image: "../src/img/camiseta.png" },
-        { id: 3, tittle: "PSG Home", price: "R$ 2499,99", image: "../src/img/camiseta.png" },
-        { id: 4, tittle: "Milan 2023", price: "R$ 2199,99", image: "../src/img/camiseta.png" },
-        { id: 5, tittle: "Milan 2023", price: "R$ 2199,99", image: "../src/img/camiseta.png" },
-        { id: 6, tittle: "Milan 2023", price: "R$ 2199,99", image: "../src/img/camiseta.png" },
-        { id: 7, tittle: "Milan 2023", price: "R$ 2199,99", image: "../src/img/camiseta.png" },
-        { id: 8, tittle: "Milan 2023", price: "R$ 2199,99", image: "../src/img/camiseta.png" },
+        { id: 1, tittle: "Nue Camp", price: "R$ 2999,99", image: "../public/img/camiseta.png" },
+        { id: 2, tittle: "Real Jersey", price: "R$ 1999,99", image: "../public/img/camiseta.png" },
+        { id: 3, tittle: "PSG Home", price: "R$ 2499,99", image: "../public/img/camiseta.png" },
+        { id: 4, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/camiseta.png" },
+        { id: 5, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/camiseta.png" },
+        { id: 6, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/camiseta.png" },
+        { id: 7, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/camiseta.png" },
+        { id: 8, tittle: "Milan 2023", price: "R$ 2199,99", image: "../public/img/camiseta.png" },
        
     ];
 

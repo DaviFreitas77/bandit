@@ -1,7 +1,7 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-
+import 'swiper/css';
 import { useEffect } from 'react';
 
 export default function Banner() {
@@ -17,13 +17,13 @@ export default function Banner() {
         >
             <SwiperSlide>
                 
-                <img className="w-full" src="../src/img/banner.png" alt="Banner 1" />
+                <img className="w-full" src="../public/img/banner.png" alt="Banner 1" />
             </SwiperSlide>
             <SwiperSlide>
-                <img className="w-full" src="../src/img/banner.png" alt="Banner 2" />
+                <img className="w-full" src="../public/img/banner.png" alt="Banner 2" />
             </SwiperSlide>
             <SwiperSlide>
-                <img className="w-full" src="../src/img/banner.png" alt="Banner 3" />
+                <img className="w-full" src="../public/img/banner.png" alt="Banner 3" />
             </SwiperSlide>
         </Swiper>
     );
