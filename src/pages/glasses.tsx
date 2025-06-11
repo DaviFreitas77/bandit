@@ -31,8 +31,8 @@ export default function Glasses() {
                         <Card.Root
                             key={index}
                             width="100%"
-                            maxW={{ base: "165px", sm: "250px", md: "320px" }}
-                            mx="auto"
+                            maxW={{ base: "200px", sm: "250px", md: "320px" }}
+                         
                             className="cursor-pointer hover:opacity-85"
                         >
                             <Link to={`/produto/${produto.id}`} state={{ produto }}>
