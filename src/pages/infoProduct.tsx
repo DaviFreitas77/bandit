@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+
 import { Portal, Select, createListCollection, HStack, IconButton, NumberInput, Button, Group, Input } from "@chakra-ui/react"
 import { LuMinus, LuPlus } from "react-icons/lu"
 import { CiDeliveryTruck } from "react-icons/ci";
@@ -15,7 +15,6 @@ export default function InfoProduct() {
   const location = useLocation();
   const { produto } = location.state || {}
   const [value, setValue] = useState<string[]>([])
-  // const { id } = useParams();
   const sizes = createListCollection({
     items: [
       { label: "p", value: "1" },
