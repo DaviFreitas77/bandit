@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaShoppingCart, FaBars } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
 export function Header() {
