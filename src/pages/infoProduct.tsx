@@ -15,7 +15,7 @@ export default function InfoProduct() {
   const location = useLocation();
   const { produto } = location.state || {}
   const [value, setValue] = useState<string[]>([])
-  const { id } = useParams();
+  // const { id } = useParams();
   const sizes = createListCollection({
     items: [
       { label: "p", value: "1" },
