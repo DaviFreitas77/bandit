@@ -17,7 +17,7 @@ export default function Menu(){
             <Drawer.Trigger asChild>
             
             
-                <CiMenuFries size={30} className="cursor-pointer"/>
+                <CiMenuFries color="black" size={30} className="cursor-pointer"/>
            
             </Drawer.Trigger>
             <Portal>

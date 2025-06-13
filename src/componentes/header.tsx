@@ -11,18 +11,18 @@ export function Header() {
     <>
 
       <header
-        className="bg-black text-white h-24 w-full flex items-center justify-between fixed top-0 z-50 shadow-md"
+        className="bg-yellow-400 text-white h-24 w-full flex items-center justify-between fixed top-0 z-50 shadow-md"
         style={{ paddingLeft: 20, paddingRight: 20 }}
       >
 
           <Menu/>
 
         {/* Logo centralizado */}
-        <div className="absolute left-1/2 transform -translate-x-1/2">
+        <div >
           <img
-            src="https://via.placeholder.com/100x40?text=Logo"
+            src="/img/logo.png"
             alt="Logo"
-            className="h-10"
+            className="w-40"
           />
         </div>
 
@@ -32,7 +32,7 @@ export function Header() {
           aria-label="Abrir carrinho"
           className="text-2xl"
         >
-          <FaShoppingCart size={20} />
+          <FaShoppingCart color="black" size={24}  className="cursor-pointer"/>
         </button>
       </header>
     </>
