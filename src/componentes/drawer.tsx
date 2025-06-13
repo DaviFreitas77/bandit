@@ -15,10 +15,10 @@ export default function Menu(){
         {(placement) => (
           <Drawer.Root key={placement} placement={placement}>
             <Drawer.Trigger asChild>
-              <Button  size="2xl">
             
-                <CiMenuFries/>
-              </Button>
+            
+                <CiMenuFries size={30} className="cursor-pointer"/>
+           
             </Drawer.Trigger>
             <Portal>
               <Drawer.Backdrop />
