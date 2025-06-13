@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import { CiMenuFries } from "react-icons/ci";
+import Menu from '../componentes/drawer'
 
 export function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+
   const [cartOpen, setCartOpen] = useState(false);
 
+  
   return (
     <>
 
@@ -14,13 +15,7 @@ export function Header() {
         style={{ paddingLeft: 20, paddingRight: 20 }}
       >
 
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Abrir menu"
-          className="text-2xl cursor-pointer"
-        >
-          <CiMenuFries size={30} />
-        </button>
+          <Menu/>
 
         {/* Logo centralizado */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
