@@ -18,7 +18,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
             <h1 style={{ fontSize: 30, fontWeight: 500, textAlign: "center" }}>
                 {selectedCategory ? ` ${selectedCategory}` : ""}
             </h1>
-            <div className="flex gap-3 flex-wrap justify-center w-full" style={{ padding: '1px' }}>
+            <div className="flex gap-3 flex-wrap justify-center w-full">
                 {filteredProducts.map((item, index) => (
                     <Card.Root
                         key={index}
