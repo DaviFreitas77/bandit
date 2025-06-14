@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 export default function ProductFeatured() {
 
     const produtos = [
-        { id: 1, tittle: "Moletom Balance", price: "R$ 2999,99", image: "/img/moletom2.jpeg" },
-        { id: 2, tittle: "Moletom Balance", price: "R$ 2999,99", image: "/img/moletom2.jpeg" },
-        { id: 3, tittle: "Moletom Balance", price: "R$ 2999,99", image: "/img/moletom2.jpeg" },
-        { id: 4, tittle: "Moletom Balance", price: "R$ 2999,99", image: "/img/moletom2.jpeg" },
-        { id: 5, tittle: "Moletom Balance", price: "R$ 2999,99", image: "/img/moletom2.jpeg" },
-        { id: 6, tittle: "Moletom Balance", price: "R$ 2999,99", image: "/img/moletom2.jpeg" },
-        { id: 7, tittle: "Moletom Balance", price: "R$ 2999,99", image: "/img/moletom2.jpeg" },
-        { id: 8, tittle: "Moletom Balance", price: "R$ 2999,99", image: "/img/moletom2.jpeg" },
+        { id: 1, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
+        { id: 2, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
+        { id: 3, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
+        { id: 4, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
+        { id: 5, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
+        { id: 6, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
+        { id: 7, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
+        { id: 8, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
       
        
     ];
