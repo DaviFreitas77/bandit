@@ -23,7 +23,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                     <Card.Root
                         key={index}
                         width="100%"
-                        maxW={{ base: "190px", sm: "250px", md: "320px" }}
+                        maxW={{ base: "180px", sm: "250px", md: "320px" }}
                         className="cursor-pointer hover:opacity-85"
                     >
                         <Link to={`/produto/${item.id}`} state={{ item }}>
