@@ -22,7 +22,7 @@ export default function Recommendation() {
     ];
     return (
         <div className="w-full mx-auto py-8">
-            <h1 style={{ fontSize: 28, fontWeight: "600", paddingLeft: 15, marginTop: 50 }}>Achamos que combina com você</h1>
+            <h1 style={{ fontSize: 28, fontWeight: "600", paddingLeft: 15, marginTop: 50 }}>Produtos relacionados</h1>
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation

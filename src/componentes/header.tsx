@@ -1,5 +1,4 @@
 
-import Menu from '../componentes/drawer'
 import ShoppingCart from "./shoppingCart";
 export function Header() {
 
@@ -11,7 +10,7 @@ export function Header() {
         style={{ paddingLeft: 20, paddingRight: 20 }}
       >
 
-        <Menu />
+        {/* <Menu /> */}
 
         {/* Logo centralizado */}
         <div >

@@ -5,7 +5,6 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import { useState } from "react"
 import { Header } from '../componentes/header';
 import { useLocation } from "react-router-dom";
-import Recommendation from '../componentes/recommendation';
 import { useEffect } from "react";
 
 export default function InfoProduct() {
@@ -13,7 +12,7 @@ export default function InfoProduct() {
     window.scrollTo(0, 0);
   }, []);
   const location = useLocation();
-  const { produto } = location.state || {}
+  const { item } = location.state || {}
   const [value, setValue] = useState<string[]>([])
   const sizes = createListCollection({
     items: [
@@ -23,21 +22,23 @@ export default function InfoProduct() {
       { label: "gg", value: "4" },
     ],
   })
+
+  console.log(item)
   return (
 
     <div>
       <Header />
       <div className="flex justify-center w-full flex-col lg:flex-row flex-wrap" style={{ marginTop: 90 }}>
         <div className='lg:w-[50%] flex justify-center'>
-          <img className='lg:w-[60%]' src={produto.image} alt="" />
+          <img className='lg:w-[60%]' src={item.image} alt="" />
         </div>
         <div
           className="w-full lg:w-[50%] flex  items-start lg:items-center"
           style={{ marginTop: 20, paddingLeft: 16, paddingRight: 16 }}
         >
           <div className='w-full lg:w-[50%]' >
-            <h1 style={{ fontWeight: '600', fontSize: 28 }}>{produto.tittle}</h1>
-            <p style={{ fontWeight: 'bold', fontSize: 28, marginTop: 15 }}>{produto.price}</p>
+            <h1 style={{ fontWeight: '600', fontSize: 28 }}>{item.name}</h1>
+            <p style={{ fontWeight: 'bold', fontSize: 28, marginTop: 15 }}>{item.price}</p>
             <p style={{ fontSize: 14, color: '#579295', fontWeight: "bold" }}>2 x de R$24,95 sem juros</p>
             <Select.Root
               collection={sizes
@@ -106,7 +107,6 @@ export default function InfoProduct() {
           </div>
         </div>
       </div>
-      <Recommendation />
     </div>
   );
 }
