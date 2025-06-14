@@ -19,7 +19,7 @@ export const products: Product[] = [
     },
     {
         id: 3,
-        name: "Camiseta Básica Branca",
+        name: "Camiseta Básica",
         price: 39.99,
           image: "/img/moletom2.jpeg",
         description: "Camiseta 100% algodão, corte clássico",
