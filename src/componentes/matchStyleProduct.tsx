@@ -26,7 +26,6 @@ export default function MatchStyle() {
                         key={index}
                         width="100%"
                         maxW={{ base: "180px", sm: "250px", md: "320px" }}
-                        mx="auto"
                         className="cursor-pointer hover:opacity-85"
                     >
                       <Link to={`/produto/${produto.id}`} state={{ produto }}>

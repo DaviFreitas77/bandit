@@ -1,12 +1,8 @@
 import { useState } from "react";
-import { FaShoppingCart } from "react-icons/fa";
 import Menu from '../componentes/drawer'
-
+import ShoppingCart from "./shoppingCart";
 export function Header() {
 
-  const [cartOpen, setCartOpen] = useState(false);
-
-  
   return (
     <>
 
@@ -15,7 +11,7 @@ export function Header() {
         style={{ paddingLeft: 20, paddingRight: 20 }}
       >
 
-          <Menu/>
+        <Menu />
 
         {/* Logo centralizado */}
         <div >
@@ -27,13 +23,7 @@ export function Header() {
         </div>
 
         {/* Botão do carrinho */}
-        <button
-          onClick={() => setCartOpen(!cartOpen)}
-          aria-label="Abrir carrinho"
-          className="text-2xl"
-        >
-          <FaShoppingCart color="black" size={24}  className="cursor-pointer"/>
-        </button>
+        <ShoppingCart />
       </header>
     </>
   );
