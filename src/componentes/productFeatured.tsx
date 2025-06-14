@@ -12,28 +12,28 @@ export default function ProductFeatured() {
         { id: 6, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
         { id: 7, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
         { id: 8, tittle: "Moletom Balance", price: "R$ 90,00", image: "/img/moletom2.jpeg" },
-      
-       
+
+
     ];
 
     return (
         <div className="relative top-56 flex flex-col items-center justify-center  gap-12">
-            <h1 style={{ fontSize: 30, fontWeight: 500,textAlign:"center" }}>As queridinhas do momento</h1>
-            <div className="flex gap-3 flex-wrap justify-center max-w-[1500px]" style={{ padding:'1px' }}>
+            <h1 style={{ fontSize: 30, fontWeight: 500, textAlign: "center" }}>As queridinhas do momento</h1>
+            <div className="flex gap-3 flex-wrap justify-center max-w-[1500px]" style={{ padding: '1px' }}>
 
                 {produtos.map((produto, index) => (
                     <Card.Root
                         key={index}
                         width="100%"
                         maxW={{ base: "180px", sm: "250px", md: "320px" }}
-                      
+
                         className="cursor-pointer hover:opacity-85"
                     >
-                      <Link to={`/produto/${produto.id}`} state={{ produto }}>
+                        <Link to={`/produto/${produto.id}`} state={{ produto }}>
                             <Card.Body
-                            width='100%'
+                                width='100%'
                                 gap="2">
-                                <img src={produto.image} alt={produto.tittle} />
+                                <div className="flex items-center justify-center"><img className="w-[210px]" src={produto.image} alt={produto.tittle} /></div>
                                 <Card.Title mb="2">{produto.tittle}</Card.Title>
                                 <Card.Description>{produto.price}</Card.Description>
                             </Card.Body>

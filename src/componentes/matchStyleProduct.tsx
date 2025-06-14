@@ -31,7 +31,7 @@ export default function MatchStyle() {
                       <Link to={`/produto/${produto.id}`} state={{ produto }}>
                             <Card.Body
                                 gap="2">
-                                <img src={produto.image} alt={produto.tittle} />
+                               <div className="flex items-center justify-center"><img className="w-[210px]" src={produto.image} alt={produto.tittle} /></div>
                                 <Card.Title mb="2">{produto.tittle}</Card.Title>
                                 <Card.Description>{produto.price}</Card.Description>
                             </Card.Body>

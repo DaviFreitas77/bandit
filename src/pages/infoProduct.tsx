@@ -9,9 +9,9 @@ import Recommendation from '../componentes/recommendation';
 import { useEffect } from "react";
 
 export default function InfoProduct() {
-       useEffect(() => {
-          window.scrollTo(0, 0);
-      }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const location = useLocation();
   const { produto } = location.state || {}
   const [value, setValue] = useState<string[]>([])
@@ -27,9 +27,9 @@ export default function InfoProduct() {
 
     <div>
       <Header />
-      <div className="flex justify-center w-full flex-col lg:flex-row flex-wrap" style={{ marginTop: 60 }}>
+      <div className="flex justify-center w-full flex-col lg:flex-row flex-wrap" style={{ marginTop: 90 }}>
         <div className='lg:w-[50%] flex justify-center'>
-          <img className='lg:w-[70%]' src={produto.image} alt="" />
+          <img className='lg:w-[60%]' src={produto.image} alt="" />
         </div>
         <div
           className="w-full lg:w-[50%] flex  items-start lg:items-center"
