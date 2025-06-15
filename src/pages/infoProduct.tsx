@@ -15,6 +15,7 @@ export default function InfoProduct() {
   const location = useLocation();
   const { item } = location.state || {}
   const [value, setValue] = useState<string[]>([])
+
   const sizes = createListCollection({
     items: [
       { label: "p", value: "1" },
@@ -40,8 +41,10 @@ export default function InfoProduct() {
           <div className='w-full lg:w-[50%]' >
             <h1 style={{ fontWeight: '600', fontSize: 28 }}>{item.name}</h1>
             <p style={{ fontWeight: 'bold', fontSize: 28, marginTop: 15 }}>{item.price}</p>
-            <p style={{ fontSize: 14, color: '#579295', fontWeight: "bold" }}>2 x de R$24,95 sem juros</p>
-            <Select.Root
+            <p style={{ fontSize: 14, color: '#579295', fontWeight: "bold" }}>{item.description}</p>
+
+            {item.category != 'Copo' ?(
+<Select.Root
               collection={sizes
               }
 
@@ -73,6 +76,10 @@ export default function InfoProduct() {
                 </Select.Positioner>
               </Portal>
             </Select.Root>
+            ):(
+              null
+            )}
+            
             <div className='flex items-center gap-4 w-full' style={{ marginTop: 40, paddingRight: 16 }}>
               <NumberInput.Root defaultValue="1" min={1} unstyled spinOnPress={false}>
                 <HStack gap="2">
