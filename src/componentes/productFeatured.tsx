@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { products } from "../data/products";
 import Footer from "./footer";
 
-
 interface ProductFeaturedProps {
     selectedCategory: string;
 }
@@ -14,31 +13,47 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
         ? products.filter((item) => item.category === selectedCategory)
         : products;
 
-
     return (
         <div className="relative top-56 flex flex-col items-center justify-center gap-12">
             <h1 style={{ fontSize: 30, fontWeight: 500, textAlign: "center" }}>
                 {selectedCategory ? ` ${selectedCategory}` : ""}
             </h1>
+
             <div className="flex gap-3 flex-wrap justify-center w-full">
                 {filteredProducts.map((item, index) => (
                     <Card.Root
                         key={index}
                         width="100%"
-                        maxW={{ base: "185px", sm: "250px", md: "320px" }}
-                        className="cursor-pointer hover:opacity-85 "
+                        maxW={{ base: "170px", sm: "250px", md: "320px" }}
+                        className="cursor-pointer hover:opacity-85 flex flex-col justify-between h-[350px] sm:h-[410px]"
                     >
-                        <Link to={`/produto/${item.id}`} state={{ item }}>
-                            <Card.Body className="h-[290px] sm:h-[350px]" width='100%' gap="2">
-                                <div className="flex items-center justify-center">
-                                    <img className="w-[210px]" src={item.image} alt={item.name} />
+                        <Link to={`/produto/${item.id}`} state={{ item }} className="flex-grow">
+                            <Card.Body
+                                width="100%"
+                                gap="2"
+                                className="flex flex-col justify-between h-full"
+                            >
+                                {/* Área da imagem com responsividade */}
+                                <div className="flex items-center justify-center h-[150px] sm:h-[200px]">
+                                    <img
+                                        className="max-h-full object-contain"
+                                        src={item.image}
+                                        alt={item.name}
+                                    />
                                 </div>
-                                <Card.Title mb="2">{item.name}</Card.Title>
-                                <Card.Description>{item.price}</Card.Description>
+
+                                {/* Nome e preço */}
+                                <div className="flex flex-col items-center gap-1 text-center px-2">
+                                    <Card.Title mb="2" fontSize={{ base: "md", sm: "lg" }}>
+                                        {item.name}
+                                    </Card.Title>
+                                    <Card.Description>{item.price}</Card.Description>
+                                </div>
                             </Card.Body>
                         </Link>
 
-                        <Card.Footer justifyContent="flex-start">
+                        {/* Botão de Comprar sempre alinhado no fim */}
+                        <Card.Footer justifyContent="center" mt="auto">
                             <Button
                                 onClick={() =>
                                     toaster.create({
@@ -47,8 +62,9 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                                     })
                                 }
                                 width="100%"
-                                maxW={{ base: "165px", sm: "250px", md: "320px" }}
+                                maxW={{ base: "140px", sm: "200px", md: "250px" }}
                                 mx="auto"
+                                size={{ base: "sm", sm: "md" }}
                             >
                                 Comprar
                             </Button>
@@ -58,7 +74,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
             </div>
 
             <Toaster />
-            <Footer/>
+            <Footer />
         </div>
     );
 }
