@@ -11,10 +11,10 @@ export const products: Product[] = [
     },
     {
         id: 2,
-        name: "Moletom Premium",
+        name: "Moletom ",
         price: 129.99,
         image: "/img/moletom2.jpeg",
-        description: "Moletom premium com interior felpudo",
+        description: "Moletom  com interior felpudo",
         category: "Moletom"
     },
     {
@@ -51,26 +51,26 @@ export const products: Product[] = [
     },
      {
         id: 7,
-        name: "Moletom Premium",
+        name: "Moletom ",
         price: 129.99,
         image: "/img/moletom2.jpeg",
-        description: "Moletom premium com interior felpudo",
+        description: "Moletom  com interior felpudo",
         category: "Moletom"
     },
      {
         id: 8,
-        name: "Moletom Premium",
+        name: "Moletom ",
         price: 129.99,
         image: "/img/moletom2.jpeg",
-        description: "Moletom premium com interior felpudo",
+        description: "Moletom  com interior felpudo",
         category: "Moletom"
     },
      {
         id: 9,
-        name: "Moletom Premium",
+        name: "Moletom ",
         price: 129.99,
         image: "/img/moletom2.jpeg",
-        description: "Moletom premium com interior felpudo",
+        description: "Moletom  com interior felpudo",
         category: "Moletom"
     },
      {
@@ -78,7 +78,7 @@ export const products: Product[] = [
         name: "Copo térmico",
         price: 129.99,
         image: "/img/copo1.jpeg",
-        description: "Moletom premium com interior felpudo",
+        description: "Moletom  com interior felpudo",
         category: "Copo"
     },
      {
@@ -86,7 +86,7 @@ export const products: Product[] = [
         name: "Copo térmico",
         price: 129.99,
         image: "/img/copo2.jpeg",
-        description: "Moletom premium com interior felpudo",
+        description: "Moletom  com interior felpudo",
         category: "Copo"
     },
      {

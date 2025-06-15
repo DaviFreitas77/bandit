@@ -43,8 +43,8 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                                 </div>
 
                                 {/* Nome e preço */}
-                                <div className="flex flex-col items-center gap-1 text-center">
-                                    <Card.Title fontSize={{ base: "md", sm: "lg" }}>
+                                <div className="flex flex-col  gap-1 ">
+                                    <Card.Title>
                                         {item.name}
                                     </Card.Title>
                                     <Card.Description>{item.price}</Card.Description>
