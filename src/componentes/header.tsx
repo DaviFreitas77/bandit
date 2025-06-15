@@ -1,5 +1,6 @@
 
 import ShoppingCart from "./shoppingCart";
+import { FaShoppingCart } from "react-icons/fa";
 export function Header() {
 
   return (
@@ -22,7 +23,9 @@ export function Header() {
         </div>
 
         {/* Botão do carrinho */}
-        <ShoppingCart />
+        <button onClick={()=>alert("em breve")}>
+          <FaShoppingCart  size={25} color="black"/>
+        </button>
       </header>
     </>
   );

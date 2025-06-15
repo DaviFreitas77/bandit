@@ -3,36 +3,36 @@ import type { Product } from "../types/product";
 export const products: Product[] = [
     {
         id: 1,
-        name: "Moletom Básico",
+        name: "Moletom Personalizado",
         price: 89.99,
         image: "/img/moletom2.jpeg",
         description: "Moletom confortável de algodão com capuz",
         category: "Moletom"
     },
-    {
-        id: 2,
-        name: "Moletom ",
-        price: 129.99,
-        image: "/img/moletom2.jpeg",
-        description: "Moletom  com interior felpudo",
-        category: "Moletom"
-    },
-    {
-        id: 3,
-        name: "Camiseta Básica",
-        price: 39.99,
-          image: "/img/moletom2.jpeg",
-        description: "Camiseta 100% algodão, corte clássico",
-        category: "Camisetas"
-    },
-    {
-        id: 4,
-        name: "Camiseta Estampada",
-        price: 49.99,
-          image: "/img/moletom2.jpeg",
-        description: "Camiseta com estampa moderna e confortável",
-        category: "Camisetas"
-    },
+    // {
+    //     id: 2,
+    //     name: "Moletom ",
+    //     price: 129.99,
+    //     image: "/img/moletom.jpeg",
+    //     description: "Moletom  com interior felpudo",
+    //     category: "Moletom"
+    // },
+    // {
+    //     id: 3,
+    //     name: "Camiseta Básica",
+    //     price: 39.99,
+    //       image: "/img/moletom2.jpeg",
+    //     description: "Camiseta 100% algodão, corte clássico",
+    //     category: "Camisetas"
+    // },
+    // {
+    //     id: 4,
+    //     name: "Camiseta Estampada",
+    //     price: 49.99,
+    //       image: "/img/moletom2.jpeg",
+    //     description: "Camiseta com estampa moderna e confortável",
+    //     category: "Camisetas"
+    // },
     {
         id: 5,
         name: "Copo Térmico",
@@ -49,30 +49,30 @@ export const products: Product[] = [
         description: "Copo de vidro elegante 300ml",
         category: "Copo"
     },
-     {
-        id: 7,
-        name: "Moletom ",
-        price: 129.99,
-        image: "/img/moletom2.jpeg",
-        description: "Moletom  com interior felpudo",
-        category: "Moletom"
-    },
-     {
-        id: 8,
-        name: "Moletom ",
-        price: 129.99,
-        image: "/img/moletom2.jpeg",
-        description: "Moletom  com interior felpudo",
-        category: "Moletom"
-    },
-     {
-        id: 9,
-        name: "Moletom ",
-        price: 129.99,
-        image: "/img/moletom2.jpeg",
-        description: "Moletom  com interior felpudo",
-        category: "Moletom"
-    },
+    //  {
+    //     id: 7,
+    //     name: "Moletom ",
+    //     price: 129.99,
+    //     image: "/img/moletom2.jpeg",
+    //     description: "Moletom  com interior felpudo",
+    //     category: "Moletom"
+    // },
+    //  {
+    //     id: 8,
+    //     name: "Moletom ",
+    //     price: 129.99,
+    //     image: "/img/moletom2.jpeg",
+    //     description: "Moletom  com interior felpudo",
+    //     category: "Moletom"
+    // },
+    //  {
+    //     id: 9,
+    //     name: "Moletom ",
+    //     price: 129.99,
+    //     image: "/img/moletom2.jpeg",
+    //     description: "Moletom  com interior felpudo",
+    //     category: "Moletom"
+    // },
      {
         id: 10,
         name: "Copo térmico",

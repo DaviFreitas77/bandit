@@ -13,7 +13,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
         ? products.filter((item) => item.category === selectedCategory)
         : products;
 
-    return (
+    return (z'
         <div className="relative top-56 flex flex-col items-center justify-center gap-12">
             <h1 style={{ fontSize: 30, fontWeight: 500, textAlign: "center" }}>
                 {selectedCategory ? ` ${selectedCategory}` : ""}
