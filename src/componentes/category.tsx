@@ -12,10 +12,11 @@ export default function Category({ setSelectedCategory }: CategoryProps) {
             <div className="flex  items-center justify-center gap-16 flex-wrap">
                 {categories.map((item, index) => {
                     return (
+                       
                         <button className="flex flex-col items-center justify-center gap-2" key={index}
                             onClick={() => setSelectedCategory(item.name)}
                         >
-                            <img className="w-40 h-40 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src={item.image} alt="" />
+                            <img className="w-30 h-30 cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110" src={item.image} alt="" />
                             {item.name}
                         </button>
                     );

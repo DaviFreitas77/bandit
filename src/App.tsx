@@ -4,6 +4,7 @@ import Banner from './componentes/banner'
 import Category from './componentes/category'
 import ProductFeatured from './componentes/productFeatured'
 import { useState } from 'react'
+
 function App() {
  const [selectedCategory, setSelectedCategory] = useState<string>("");
   return (
@@ -12,6 +13,7 @@ function App() {
         <Banner/>
           <Category setSelectedCategory={setSelectedCategory} />
         <ProductFeatured selectedCategory={selectedCategory}/>
+   
     
     </div>
   )

@@ -2,6 +2,8 @@ import { Button, Card } from "@chakra-ui/react";
 import { Toaster, toaster } from "../../src/components/ui/toaster";
 import { Link } from "react-router-dom";
 import { products } from "../data/products";
+import Footer from "./footer";
+
 
 interface ProductFeaturedProps {
     selectedCategory: string;
@@ -23,11 +25,11 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                     <Card.Root
                         key={index}
                         width="100%"
-                        maxW={{ base: "180px", sm: "250px", md: "320px" }}
-                        className="cursor-pointer hover:opacity-85"
+                        maxW={{ base: "170px", sm: "250px", md: "320px" }}
+                        className="cursor-pointer hover:opacity-85 "
                     >
                         <Link to={`/produto/${item.id}`} state={{ item }}>
-                            <Card.Body width='100%' gap="2">
+                            <Card.Body className="h-[290px] sm:h-[350px]" width='100%' gap="2">
                                 <div className="flex items-center justify-center">
                                     <img className="w-[210px]" src={item.image} alt={item.name} />
                                 </div>
@@ -56,6 +58,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
             </div>
 
             <Toaster />
+            <Footer/>
         </div>
     );
 }

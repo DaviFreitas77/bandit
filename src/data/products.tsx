@@ -37,7 +37,7 @@ export const products: Product[] = [
         id: 5,
         name: "Copo Térmico",
         price: 25.99,
-         image: "/img/moletom2.jpeg",
+         image: "/img/copo23.jpeg",
         description: "Copo térmico de aço inoxidável 500ml",
         category: "copo"
     },
@@ -45,7 +45,7 @@ export const products: Product[] = [
         id: 6,
         name: "Copo de Vidro",
         price: 19.99,
-         image: "/img/moletom2.jpeg",
+         image: "/img/copo11.jpeg",
         description: "Copo de vidro elegante 300ml",
         category: "Copo"
     },
@@ -72,6 +72,174 @@ export const products: Product[] = [
         image: "/img/moletom2.jpeg",
         description: "Moletom premium com interior felpudo",
         category: "Moletom"
+    },
+     {
+        id: 10,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo1.jpeg",
+        description: "Moletom premium com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id:11,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo2.jpeg",
+        description: "Moletom premium com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 12,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo3.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 13,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo4.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 14,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo5.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 15,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo6.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 16,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo7.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 17,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo8.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 18,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo9.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 19,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo10.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 20,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo12.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 21,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo13.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 22,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo14.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 23,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo15.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 24,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo16.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 25,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo17.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 26,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo18.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 27,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo19.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 28,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo20.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 29,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo21.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
+    },
+     {
+        id: 30,
+        name: "Copo térmico",
+        price: 129.99,
+        image: "/img/copo22.jpeg",
+        description: "Copo térmico com interior felpudo",
+        category: "Copo"
     },
 ];
 

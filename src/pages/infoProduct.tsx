@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Header } from '../componentes/header';
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Footer from "../componentes/footer";
 
 export default function InfoProduct() {
   useEffect(() => {
@@ -108,5 +109,6 @@ export default function InfoProduct() {
         </div>
       </div>
     </div>
+
   );
 }
