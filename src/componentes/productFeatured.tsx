@@ -68,7 +68,8 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                                 maxW={{ base: "140px", sm: "200px", md: "250px" }}
                                 size={{ base: "sm", sm: "md" }}
                             >
-                                Comprar via WhatsApp
+                                
+                                 Comprar
                             </Button>
                         </Card.Footer>
                     </Card.Root>

@@ -43,43 +43,43 @@ export default function InfoProduct() {
             <p style={{ fontWeight: 'bold', fontSize: 28, marginTop: 15 }}>{item.price}</p>
             <p style={{ fontSize: 14, color: '#579295', fontWeight: "bold" }}>{item.description}</p>
 
-            {item.category != 'Copo' ?(
-<Select.Root
-              collection={sizes
-              }
+            {item.category != 'Copo' ? (
+              <Select.Root
+                collection={sizes
+                }
 
-              pt="8"
-              value={value}
-              onValueChange={(e) => setValue(e.value)}
-            >
-              <Select.HiddenSelect />
-              <Select.Label>Tamanho</Select.Label>
-              <Select.Control>
-                <Select.Trigger>
-                  <Select.ValueText placeholder="selecione o tamanho" />
-                </Select.Trigger>
-                <Select.IndicatorGroup>
-                  <Select.Indicator />
-                </Select.IndicatorGroup>
-              </Select.Control>
-              <Portal>
-                <Select.Positioner>
-                  <Select.Content>
-                    {sizes
-                      .items.map((size) => (
-                        <Select.Item item={size} key={size.value}>
-                          {size.label}
-                          <Select.ItemIndicator />
-                        </Select.Item>
-                      ))}
-                  </Select.Content>
-                </Select.Positioner>
-              </Portal>
-            </Select.Root>
-            ):(
+                pt="8"
+                value={value}
+                onValueChange={(e) => setValue(e.value)}
+              >
+                <Select.HiddenSelect />
+                <Select.Label>Tamanho</Select.Label>
+                <Select.Control>
+                  <Select.Trigger>
+                    <Select.ValueText placeholder="selecione o tamanho" />
+                  </Select.Trigger>
+                  <Select.IndicatorGroup>
+                    <Select.Indicator />
+                  </Select.IndicatorGroup>
+                </Select.Control>
+                <Portal>
+                  <Select.Positioner>
+                    <Select.Content>
+                      {sizes
+                        .items.map((size) => (
+                          <Select.Item item={size} key={size.value}>
+                            {size.label}
+                            <Select.ItemIndicator />
+                          </Select.Item>
+                        ))}
+                    </Select.Content>
+                  </Select.Positioner>
+                </Portal>
+              </Select.Root>
+            ) : (
               null
             )}
-            
+
             <div className='flex items-center gap-4 w-full' style={{ marginTop: 40, paddingRight: 16 }}>
               <NumberInput.Root defaultValue="1" min={1} unstyled spinOnPress={false}>
                 <HStack gap="2">
@@ -96,7 +96,21 @@ export default function InfoProduct() {
                   </NumberInput.IncrementTrigger>
                 </HStack>
               </NumberInput.Root>
-              <Button w={{ base: "65%", lg: "100%" }} height="50px">
+              <Button
+                onClick={() => {
+                  window.open(
+                    `https://wa.me/5511954783565?text=Olá! Tenho interesse no produto: ${encodeURIComponent(item.name)}`,
+                    '_blank'
+                  );
+                }}
+                bg="black"
+                color="white"
+                _hover={{ bg: "gray.800" }}
+                width="100%"
+                maxW={{ base: "140px", sm: "200px", md: "250px" }}
+                size={{ base: "sm", sm: "md" }}
+              >
+
                 Comprar
               </Button>
             </div>
