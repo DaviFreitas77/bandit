@@ -24,14 +24,14 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                     <Card.Root
                         key={index}
                         width="100%"
-                        maxW={{ base: "170px", sm: "250px", md: "320px" }}
-                        className="cursor-pointer hover:opacity-85 flex flex-col justify-between h-[350px] sm:h-[410px]"
+                        maxW={{ base: "180px", sm: "250px", md: "320px" }}
+                        className="cursor-pointer hover:opacity-85 flex flex-col justify-between h-[310px] sm:h-[410px]"
                     >
                         <Link to={`/produto/${item.id}`} state={{ item }} className="flex-grow">
                             <Card.Body
                                 width="100%"
                                 gap="2"
-                                className="flex flex-col justify-between h-full"
+                                className="flex flex-col justify-between"
                             >
                                 {/* Área da imagem com responsividade */}
                                 <div className="flex items-center justify-center h-[150px] sm:h-[200px]">
@@ -43,8 +43,8 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                                 </div>
 
                                 {/* Nome e preço */}
-                                <div className="flex flex-col items-center gap-1 text-center px-2">
-                                    <Card.Title mb="2" fontSize={{ base: "md", sm: "lg" }}>
+                                <div className="flex flex-col items-center gap-1 text-center">
+                                    <Card.Title fontSize={{ base: "md", sm: "lg" }}>
                                         {item.name}
                                     </Card.Title>
                                     <Card.Description>{item.price}</Card.Description>
