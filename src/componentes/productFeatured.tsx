@@ -25,7 +25,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                         key={index}
                         width="100%"
                         maxW={{ base: "180px", sm: "250px", md: "320px" }}
-                        className="cursor-pointer hover:opacity-85 flex flex-col justify-between h-[330px] sm:h-[410px]"
+                        className="cursor-pointer hover:opacity-85 flex flex-col justify-between h-[350px] sm:h-[410px]"
                     >
                         <Link to={`/produto/${item.id}`} state={{ item }} className="flex-grow">
                             <Card.Body
