@@ -1,5 +1,5 @@
 
-import ShoppingCart from "./shoppingCart";
+
 import { FaShoppingCart } from "react-icons/fa";
 export function Header() {
 
