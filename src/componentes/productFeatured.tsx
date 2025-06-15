@@ -1,5 +1,5 @@
 import { Button, Card } from "@chakra-ui/react";
-import { Toaster, toaster } from "../../src/components/ui/toaster";
+import { Toaster } from "../../src/components/ui/toaster";
 import { Link } from "react-router-dom";
 import { products } from "../data/products";
 import Footer from "./footer";
@@ -13,7 +13,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
         ? products.filter((item) => item.category === selectedCategory)
         : products;
 
-    return (z'
+    return (
         <div className="relative top-56 flex flex-col items-center justify-center gap-12">
             <h1 style={{ fontSize: 30, fontWeight: 500, textAlign: "center" }}>
                 {selectedCategory ? ` ${selectedCategory}` : ""}
@@ -55,18 +55,16 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                         {/* Botão de Comprar sempre alinhado no fim */}
                         <Card.Footer justifyContent="center" mt="auto">
                             <Button
-                                onClick={() =>
-                                    toaster.create({
-                                        title: "Produto",
-                                        description: `${item.name} adicionado ao carrinho`,
-                                    })
-                                }
+                                as="a"
+                                href={`https://wa.me/5511954783565?text=Olá! Tenho interesse no produto: ${encodeURIComponent(item.name)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 width="100%"
                                 maxW={{ base: "140px", sm: "200px", md: "250px" }}
                                 mx="auto"
                                 size={{ base: "sm", sm: "md" }}
                             >
-                                Comprar
+                                Comprar via WhatsApp
                             </Button>
                         </Card.Footer>
                     </Card.Root>
