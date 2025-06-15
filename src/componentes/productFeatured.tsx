@@ -1,4 +1,4 @@
-import { Button, Card } from "@chakra-ui/react";
+import { Button,Card } from "@chakra-ui/react";
 import { Toaster } from "../../src/components/ui/toaster";
 import { Link } from "react-router-dom";
 import { products } from "../data/products";
@@ -55,13 +55,17 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                         {/* Botão de Comprar sempre alinhado no fim */}
                         <Card.Footer justifyContent="center" mt="auto">
                             <Button
-                                as="a"
-                                href={`https://wa.me/5511954783565?text=Olá! Tenho interesse no produto: ${encodeURIComponent(item.name)}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                onClick={() => {
+                                    window.open(
+                                        `https://wa.me/5511954783565?text=Olá! Tenho interesse no produto: ${encodeURIComponent(item.name)}`,
+                                        '_blank'
+                                    );
+                                }}
+                                bg="black"
+                                color="white"
+                                _hover={{ bg: "gray.800" }}
                                 width="100%"
                                 maxW={{ base: "140px", sm: "200px", md: "250px" }}
-                                mx="auto"
                                 size={{ base: "sm", sm: "md" }}
                             >
                                 Comprar via WhatsApp
