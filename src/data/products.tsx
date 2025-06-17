@@ -23,16 +23,16 @@ export const products: Product[] = [
         price: 'R$ 90,00',
         image: "/img/moletom4.jpeg",
         description: "Moletom confortável com capuz,adicione sua estampa predileta.",
-        category: "Camisetas"
+        category: "Moletom"
     },
-    // {
-    //     id: 4,
-    //     name: "Camiseta Estampada",
-    //     price: 49.99,
-    //       image: "/img/moletom2.jpeg",
-    //     description: "Camiseta com estampa moderna e confortável",
-    //     category: "Camisetas"
-    // },
+    {
+        id: 4,
+        name: "Moletom",
+        price: 'R$ 90,00',
+        image: "/img/moletom5.jpeg",
+        description: "Moletom confortável com capuz,adicione sua estampa predileta.",
+        category: "Moletom"
+    },
     {
         id: 5,
         name: "Stanley Thermos",
