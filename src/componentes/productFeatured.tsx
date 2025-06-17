@@ -1,4 +1,4 @@
-import { Button,Card } from "@chakra-ui/react";
+import { Button, Card } from "@chakra-ui/react";
 import { Toaster } from "../../src/components/ui/toaster";
 import { Link } from "react-router-dom";
 import { products } from "../data/products";
@@ -68,8 +68,8 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                                 maxW={{ base: "140px", sm: "200px", md: "250px" }}
                                 size={{ base: "sm", sm: "md" }}
                             >
-                                
-                                 Comprar
+
+                                Comprar
                             </Button>
                         </Card.Footer>
                     </Card.Root>
