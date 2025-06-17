@@ -1,7 +1,5 @@
 
-import { Portal, Select, createListCollection, HStack, IconButton, NumberInput, Button, Group, Input } from "@chakra-ui/react"
-import { LuMinus, LuPlus } from "react-icons/lu"
-import { CiDeliveryTruck } from "react-icons/ci";
+import { Portal, Select, createListCollection, Button, } from "@chakra-ui/react"
 import { useState } from "react"
 import { Header } from '../componentes/header';
 import { useLocation } from "react-router-dom";
