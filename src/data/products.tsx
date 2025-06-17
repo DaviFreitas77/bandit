@@ -3,28 +3,28 @@ import type { Product } from "../types/product";
 export const products: Product[] = [
     {
         id: 1,
-        name: "Moletom Personalizado",
-        price: '89.99',
+        name: "Moletom",
+        price: 'R$ 90,00',
         image: "/img/moletom2.jpeg",
-        description: "Moletom confortável de algodão com capuz",
+        description: "Moletom confortável com capuz,adicione sua estampa predileta.",
         category: "Moletom"
     },
-    // {
-    //     id: 2,
-    //     name: "Moletom ",
-    //     price:' 129.99',
-    //     image: "/img/moletom.jpeg",
-    //     description: "Moletom  com interior felpudo",
-    //     category: "Moletom"
-    // },
-    // {
-    //     id: 3,
-    //     name: "Camiseta Básica",
-    //     price: 39.99,
-    //       image: "/img/moletom2.jpeg",
-    //     description: "Camiseta 100% algodão, corte clássico",
-    //     category: "Camisetas"
-    // },
+    {
+        id: 2,
+        name: "Moletom ",
+        price: 'R$ 90,00',
+        image: "/img/moletom3.jpeg",
+        description: "Moletom confortável com capuz,adicione sua estampa predileta.",
+        category: "Moletom"
+    },
+    {
+        id: 3,
+        name: "Moletom",
+        price: 'R$ 90,00',
+        image: "/img/moletom4.jpeg",
+        description: "Moletom confortável com capuz,adicione sua estampa predileta.",
+        category: "Camisetas"
+    },
     // {
     //     id: 4,
     //     name: "Camiseta Estampada",
@@ -76,7 +76,7 @@ export const products: Product[] = [
     {
         id: 10,
         name: "Taça Térmica Cocktail",
-        price:' R$ 50,00',
+        price: ' R$ 50,00',
         image: "/img/copo1.jpeg",
         description: "Moletom  com interior felpudo",
         category: "Copo"
@@ -107,7 +107,7 @@ export const products: Product[] = [
     },
     {
         id: 14,
-      name: "Taça Térmica Cocktail",
+        name: "Taça Térmica Cocktail",
         price: 'R$ 50,00',
         image: "/img/copo5.jpeg",
         description: "414ml",
@@ -115,7 +115,7 @@ export const products: Product[] = [
     },
     {
         id: 15,
-         name: "Taça Térmica Cocktail",
+        name: "Taça Térmica Cocktail",
         price: 'R$ 50,00',
         image: "/img/copo6.jpeg",
         description: "414ml",
@@ -139,7 +139,7 @@ export const products: Product[] = [
     },
     {
         id: 18,
-       name: "Taça Térmica Cocktail",
+        name: "Taça Térmica Cocktail",
         price: 'R$ 50,00',
         image: "/img/copo9.jpeg",
         description: "414ml",
@@ -148,7 +148,7 @@ export const products: Product[] = [
     {
         id: 19,
         name: "Copo térmico tampa Transparente",
-        price:' R$ 65,00',
+        price: ' R$ 60,00',
         image: "/img/copo10.jpeg",
         description: "1200ml",
         category: "Copo"
@@ -156,7 +156,7 @@ export const products: Product[] = [
     {
         id: 20,
         name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        price: ' R$ 60,00',
         image: "/img/copo12.jpeg",
         description: "Copo térmico com interior felpudo",
         category: "Copo"
@@ -164,23 +164,23 @@ export const products: Product[] = [
     {
         id: 21,
         name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        price: ' R$ 60,00',
         image: "/img/copo13.jpeg",
         description: "Copo térmico com interior felpudo",
         category: "Copo"
     },
     {
         id: 22,
-         name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        name: "Copo térmico em marmore colorido",
+        price: ' R$ 60,00',
         image: "/img/copo14.jpeg",
         description: "Copo térmico com interior felpudo",
         category: "Copo"
     },
     {
         id: 23,
-         name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        name: "Copo térmico em marmore colorido",
+        price: ' R$ 60,00',
         image: "/img/copo15.jpeg",
         description: "1200ml",
         category: "Copo"
@@ -188,15 +188,15 @@ export const products: Product[] = [
     {
         id: 24,
         name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        price: ' R$ 60,00',
         image: "/img/copo16.jpeg",
         description: "1200ml",
         category: "Copo"
     },
     {
         id: 25,
-       name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        name: "Copo térmico em marmore colorido",
+        price: ' R$ 60,00',
         image: "/img/copo17.jpeg",
         description: "1200ml",
         category: "Copo"
@@ -204,15 +204,15 @@ export const products: Product[] = [
     {
         id: 26,
         name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        price: ' R$ 60,00',
         image: "/img/copo18.jpeg",
         description: "1200ml",
         category: "Copo"
     },
     {
         id: 27,
-      name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        name: "Copo térmico em marmore colorido",
+        price: ' R$ 60,00',
         image: "/img/copo19.jpeg",
         description: "1200ml",
         category: "Copo"
@@ -220,7 +220,7 @@ export const products: Product[] = [
     {
         id: 28,
         name: "Copo térmico em marmore colorido",
-        price:' R$ 65,00',
+        price: ' R$ 60,00',
         image: "/img/copo20.jpeg",
         description: "1200ml",
         category: "Copo"
@@ -228,113 +228,113 @@ export const products: Product[] = [
     {
         id: 29,
         name: "Copo térmico",
-        price:' 129.99',
+        price: ' R$ 60,00',
         image: "/img/copo21.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 30,
         name: "Copo térmico",
-        price:' 129.99',
+        price: ' R$ 60,00',
         image: "/img/copo22.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 31,
         name: "Copo térmico",
-        price:' 129.99',
+        price: ' R$ 60,00',
         image: "/img/copo31.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 32,
         name: "Copo térmico",
-        price:' 129.99',
+        price: ' R$ 60,00',
         image: "/img/copo32.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 33,
         name: "Copo térmico",
-        price:' 129.99',
+        price: ' R$ 60,00',
         image: "/img/copo33.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 34,
         name: "Copo térmico",
-        price:' 129.99',
+        price: ' R$ 60,00',
         image: "/img/copo34.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 35,
-        name: "Copo térmico",
-        price:' 129.99',
+        name: "Copo térmico com canudo",
+        price: ' R$ 65,00',
         image: "/img/copo35.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 36,
-        name: "Copo térmico",
-        price:' 129.99',
+        name: "Copo térmico com canudo",
+        price: ' R$ 65,00',
         image: "/img/copo36.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 37,
         name: "Copo térmico",
-        price:' 129.99',
+        price: ' R$ 60,00',
         image: "/img/copo37.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 38,
-        name: "Copo térmico",
-        price:' 129.99',
+        name: "Copo térmico com canudo",
+        price: ' R$ 65,00',
         image: "/img/copo38.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 39,
-        name: "Copo térmico",
-        price:' 129.99',
+        name: "Copo térmico com canudo",
+        price: ' R$ 65,00',
         image: "/img/copo39.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 40,
-        name: "Copo térmico",
-        price:' 129.99',
+        name: "Copo térmico com canudo",
+        price: ' R$ 65,00',
         image: "/img/copo40.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 41,
-        name: "Copo térmico",
-        price:' 129.99',
+        name: "Copo térmico com canudo",
+        price: ' R$ 65,00',
         image: "/img/copo41.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
     {
         id: 42,
-        name: "Copo térmico",
-        price:' 129.99',
+        name: "Copo térmico com canudo",
+        price: ' R$ 65,00',
         image: "/img/copo42.jpeg",
-        description: "Copo térmico com interior felpudo",
+        description: "1200ml",
         category: "Copo"
     },
 ];
