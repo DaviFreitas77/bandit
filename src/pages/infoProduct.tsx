@@ -30,12 +30,12 @@ export default function InfoProduct() {
 
     <div>
       <Header />
-      <div className="flex justify-center w-full flex-col lg:flex-row flex-wrap" style={{ marginTop: 90 }}>
-        <div className='lg:w-[50%] flex justify-center'>
-          <img className='lg:w-[60%]' src={item.image} alt="" />
+      <div className="flex justify-center w-full flex-col lg:flex-row flex-wrap" >
+        <div className='lg:w-[50%] flex justify-center'style={{marginTop:70}}>
+          <img className='lg:w-[80%]' src={item.image} alt="" />
         </div>
         <div
-          className="w-full lg:w-[50%] flex  items-start lg:items-center"
+          className="w-full lg:w-[50%] flex  items-start lg:items-center justify-center"
           style={{ marginTop: 20, paddingLeft: 16, paddingRight: 16 }}
         >
           <div className='w-full lg:w-[50%]' >
@@ -81,7 +81,7 @@ export default function InfoProduct() {
             )}
 
             <div className='flex items-center gap-4 w-full' style={{ marginTop: 40, paddingRight: 16 }}>
-              <NumberInput.Root defaultValue="1" min={1} unstyled spinOnPress={false}>
+              {/* <NumberInput.Root defaultValue="1" min={1} unstyled spinOnPress={false}>
                 <HStack gap="2">
                   <NumberInput.DecrementTrigger asChild>
                     <IconButton variant="outline" size="sm">
@@ -95,7 +95,7 @@ export default function InfoProduct() {
                     </IconButton>
                   </NumberInput.IncrementTrigger>
                 </HStack>
-              </NumberInput.Root>
+              </NumberInput.Root> */}
               <Button
                 onClick={() => {
                   window.open(
@@ -114,7 +114,7 @@ export default function InfoProduct() {
                 Comprar
               </Button>
             </div>
-            <div className='flex flex-col gap-2' style={{ marginTop: 20 }}>
+            {/* <div className='flex flex-col gap-2' style={{ marginTop: 20 }}>
               <div className='flex items-center gap-2'>
                 <CiDeliveryTruck size={25} />
                 <span>meios de envio</span>
@@ -125,7 +125,7 @@ export default function InfoProduct() {
                   Calcular
                 </Button>
               </Group>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
