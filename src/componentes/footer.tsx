@@ -7,13 +7,13 @@ export default function Footer() {
       {/* Redes Sociais */}
       <Flex justify="center" mb={4} gap={6}>
         <Link href="https://www.instagram.com/y.w.bandit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" >
-          <Icon as={FaInstagram} boxSize={6} _hover={{ color: "pink.400" }} />
+          <Icon as={FaInstagram} color="#FDC700" boxSize={6} _hover={{ color: "pink.400" }} />
         </Link>
         <Link href="https://wa.me/5511954783565" >
-          <Icon as={FaWhatsapp} boxSize={6} _hover={{ color: "green.400" }} />
+          <Icon as={FaWhatsapp} color="#FDC700" boxSize={6} _hover={{ color: "green.400" }} />
         </Link>
         <Link href="https://www.tiktok.com/@y.w.bstylish?_t=ZM-8xIHn5w4RXk&_r=1" >
-          <Icon as={FaTiktok} boxSize={6} _hover={{ color: "gray.400" }} />
+          <Icon as={FaTiktok} color="#FDC700" boxSize={6} _hover={{ color: "gray.400" }} />
         </Link>
       </Flex>
 
