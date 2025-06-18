@@ -7,7 +7,7 @@ export function Header() {
     <>
 
       <header
-        className="bg-yellow-400 text-white h-24 w-full flex items-center justify-between fixed top-0 z-50 shadow-md"
+        className="bg-yellow-400 text-white h-24 w-full flex items-center justify-between  fixed top-0 z-50 shadow-md "
         style={{ paddingLeft: 20, paddingRight: 20 }}
       >
 
