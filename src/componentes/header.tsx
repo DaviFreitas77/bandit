@@ -1,6 +1,6 @@
 
 
-import { FaShoppingCart } from "react-icons/fa";
+// import { FaShoppingCart } from "react-icons/fa";
 export function Header() {
 
   return (
@@ -14,7 +14,7 @@ export function Header() {
         {/* <Menu /> */}
 
         {/* Logo centralizado */}
-        <div >
+        <div className="flex w-full items-center justify-center">
           <img
             src="/img/logo.png"
             alt="Logo"
@@ -23,9 +23,9 @@ export function Header() {
         </div>
 
         {/* Botão do carrinho */}
-        <button onClick={()=>alert("em breve")}>
+        {/* <button onClick={()=>alert("em breve")}>
           <FaShoppingCart  size={25} color="black"/>
-        </button>
+        </button> */}
       </header>
     </>
   );
