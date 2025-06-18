@@ -16,7 +16,7 @@ export default function Category({ setSelectedCategory }: CategoryProps) {
                 }}
             >
                 <SegmentGroup.Indicator />
-                <div className="flex items-center justify-center flex-wrap gap-4 w-[250px] sm:w-full">
+                <div className="flex items-center justify-center flex-wrap gap-4 w-[350px] sm:w-full">
                     {categories.map((item, index) => (
                         <SegmentGroup.Item className="break-words text-center basis-full max-w-xs sm:basis-auto sm:max-w-none" key={index} value={item.name}>
                             <SegmentGroup.ItemText>{item.name}</SegmentGroup.ItemText>
