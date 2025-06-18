@@ -45,7 +45,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                                 {/* Nome e preço */}
                                 <div className="flex flex-col  gap-1 ">
                                     <Card.Title>
-                                      {item.name.length > 10 ? item.name.slice(0, 10) + "..." : item.name}
+                                      {item.name.length > 10 ? item.name.slice(0, 13) + "..." : item.name}
                                     </Card.Title>
                                     <Card.Description>{item.price}</Card.Description>
                                 </div>
