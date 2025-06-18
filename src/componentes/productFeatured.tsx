@@ -15,9 +15,9 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
 
     return (
         <div className="relative top-56 flex flex-col items-center justify-center gap-12">
-            <h1 style={{ fontSize: 30, fontWeight: 500, textAlign: "center" }}>
+            {/* <h1 style={{ fontSize: 30, fontWeight: 500, textAlign: "center" }}>
                 {selectedCategory ? ` ${selectedCategory}` : ""}
-            </h1>
+            </h1> */}
 
             <div className="flex gap-3 flex-wrap justify-center w-full">
                 {filteredProducts.map((item, index) => (
@@ -26,6 +26,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                         width="100%"
                         maxW={{ base: "170px", sm: "250px", md: "320px" }}
                         className="cursor-pointer hover:opacity-85 flex flex-col justify-between h-[350px] sm:h-[410px]"
+
                     >
                         <Link to={`/produto/${item.id}`} state={{ item }} className="flex-grow">
                             <Card.Body
@@ -45,7 +46,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                                 {/* Nome e preço */}
                                 <div className="flex flex-col  gap-1 ">
                                     <Card.Title>
-                                      {item.name.length > 10 ? item.name.slice(0, 13) + "..." : item.name}
+                                        {item.name.length > 10 ? item.name.slice(0, 13) + "..." : item.name}
                                     </Card.Title>
                                     <Card.Description>{item.price}</Card.Description>
                                 </div>
@@ -75,7 +76,6 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                     </Card.Root>
                 ))}
             </div>
-
             <Toaster />
             <Footer />
         </div>
