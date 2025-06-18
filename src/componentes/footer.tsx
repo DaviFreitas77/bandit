@@ -20,7 +20,7 @@ export default function Footer() {
       {/* Texto */}
       <Stack  textAlign="center">
         <Text fontSize="sm">© 2025 YWB Stylish. Todos os direitos reservados.</Text>
-        <Text fontSize="xs" color="gray.400">Desenvolvido por sua hypeWeb.</Text>
+        <Text fontSize="xs" color="gray.400">Desenvolvido por hypeWeb.</Text>
       </Stack>
     </Box>
   );
