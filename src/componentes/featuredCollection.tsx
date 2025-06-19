@@ -11,9 +11,10 @@ export default function FeaturedColletion() {
             <h1 style={{ fontSize: '2rem', textAlign: "center" }}>Novidades em alta</h1>
 
             <div className="w-full flex">
-                 <img className='!hidden sm:!block sm:w-[400px]' src="/img/sessaoMoletom.jpeg" alt="" />
+                <div className='max-w-3/5'>
+                    <img className='!hidden sm:!block  md:w-[640px]   w-full' src="/img/sessaoMoletom.jpeg" alt="" /></div>
                 <Swiper
-                    spaceBetween={0}
+                    spaceBetween={1}
                     centeredSlides={false}
                     breakpoints={{
                         320: { slidesPerView: 2 },
@@ -28,18 +29,19 @@ export default function FeaturedColletion() {
                             <Card.Root
                                 width="100%"
                                 maxW="100%"
-                                className="cursor-pointer hover:opacity-85 h-[320px] sm:h-[650px] m-0 p-0"
+                                className="cursor-pointer hover:opacity-85 sm:h-[380px] md:h-[480px]
+                                 lg:h-[720px] 2xl:h-[960px]  "
                             >
                                 <Link
                                     to={`/produto/${item.id}`}
                                     state={{ item }}
-                                    className="h-full w-full flex flex-col justify-between items-center bg-[#DFDFDF]"
+                                    className="sm:w-full   sm:h-full  flex justify-between items-center   bg-[#DFDFDF]"
                                 >
-                                    <Card.Body width="100%" className='flex flex-col justify-center items-center gap-4 px-2 py-4'>
+                                    <Card.Body width="100%" className='flex flex-col justify-center items-center h-full '>
                                         {/* Imagem */}
                                         <div className="flex items-center justify-center h-[150px] sm:h-[250px]">
                                             <img
-                                                className="max-h-full object-contain mix-blend-multiply"
+                                                className="max-h-full  object-contain mix-blend-multiply"
                                                 src={item.image}
                                                 alt={item.name}
                                             />

@@ -7,7 +7,7 @@ interface CategoryProps {
 
 export default function Category({ setSelectedCategory }: CategoryProps) {
     return (
-        <div className="flex items-center justify-center gap-7 relative top-56 ">
+        <div className="flex items-center justify-center gap-7 relative top-60 ">
             <SegmentGroup.Root
 
                 defaultValue="Todos os produtos"
