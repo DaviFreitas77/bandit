@@ -24,7 +24,7 @@ export default function ProductFeatured({ selectedCategory }: ProductFeaturedPro
                     <Card.Root
                         key={index}
                         width="100%"
-                        maxW={{ base: "170px", sm: "250px", md: "320px" }}
+                        maxW={{ base: "45%", sm: "250px", md: "320px" }}
                         className="cursor-pointer hover:opacity-85 flex flex-col justify-between h-[350px] sm:h-[410px]"
 
                     >
