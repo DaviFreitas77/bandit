@@ -20,7 +20,7 @@ export default function InfoProduct() {
 
     <div>
       <Header />
-      <div className="flex gap-20 justify-center relative flex-wrap top-52">
+      <div className="flex gap-20 justify-center relative flex-wrap top-32">
         <img className="w-[500px]" src={item.image} alt="" />
         <div className=" flex flex-col gap-5 w-full max-w-[600px]" style={{ padding: 8 }}>
 
