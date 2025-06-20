@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { IoChatbubbleOutline } from "react-icons/io5";
 import { Badge } from "@chakra-ui/react"
+import Recommendation from '../componentes/recommendation';
+import { products } from '../data/products';
 
 
 export default function InfoProduct() {
@@ -15,7 +17,14 @@ export default function InfoProduct() {
   const { item } = location.state || {}
 
 
-  console.log(item)
+  const categoryItem = item.category
+
+  const filteredProduct = products.filter((produto) =>
+    produto.category === categoryItem && produto.id !== item.id
+  ).slice(0,6);
+
+
+
   return (
 
     <div>
@@ -28,7 +37,7 @@ export default function InfoProduct() {
             <Badge colorPalette="green" >
               {item.category}
             </Badge>
-         
+
             <p style={{ fontWeight: "bold", fontSize: '38px', color: '#020817' }}>{item.name}</p>
           </div>
           <p style={{ fontSize: '30px' }}>{item.price}</p>
@@ -50,7 +59,9 @@ export default function InfoProduct() {
           </div>
 
         </div>
+        <Recommendation products={filteredProduct} />
       </div>
+
     </div>
 
   );

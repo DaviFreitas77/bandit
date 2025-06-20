@@ -21,7 +21,6 @@ export default function FeaturedColletion() {
                     centeredSlides={false}
                     navigation
                     pagination={{ clickable: true }}
-                    // scrollbar={{ draggable: false }}
                     breakpoints={{
                        320: { slidesPerView: 2 },
                         520: { slidesPerView: 3 },
