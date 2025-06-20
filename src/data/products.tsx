@@ -39,7 +39,7 @@ export const products: Product[] = [
         price: 'R$ 65,00',
         image: "/img/copo23.jpeg",
         description: "1,18L",
-        category: "copo"
+        category: "Copo"
     },
     {
         id: 6,

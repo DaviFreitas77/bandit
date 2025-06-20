@@ -1,14 +1,12 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from "react-router-dom";
 import { type Product } from '../types/product';
 
 interface RecommendationProps {
     products: Product[];
 }
-// import required modules
+
 import { Navigation, Pagination } from 'swiper/modules';
 
 export default function Recommendation({ products }: RecommendationProps) {
